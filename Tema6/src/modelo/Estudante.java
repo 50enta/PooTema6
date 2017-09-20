@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Ex01;
+package modelo;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -128,6 +128,11 @@ public class Estudante {
      */
     public void setMedia(double media) {
         this.media = media;
+    }
+
+    @Override
+    public String toString() {
+        return "\n Nome: "+this.getNomeEstudante()+"\n Número: "+this.getNumeroEstudante()+"\n Média: "+this.getMedia();
     }
 
     
